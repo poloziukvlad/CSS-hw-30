@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-container {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image1 {
+  background-image: url(/img/banana.png);
+}
+
+.image2 {
+  background-image: url(/img/boats.jpg);
+  background-size: cover;
+}
+
+.image3 {
+  background-image: url(/img/dragon.svg);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .image1 {
+    background-image: url(/img/banana@2x.webp);
+    background-image: url(/img/banana@2x.png);
+  }
+
+  .image2 {
+    background-image: url(/img/boats@2x.webp);
+    background-image: url(/img/boats@2x.jpg);
+  }
+
+  .image3 {
+    background-image: url(/img/dragon@2x.webp);
+    background-image: url(/img/dragon@2x.svg);
+  }
+}
